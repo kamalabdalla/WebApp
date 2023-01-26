@@ -1,0 +1,38 @@
+<%- include('layout/header') %> 
+<div class="container">
+  <div class="raw">
+     <div class="col-lg-6 mx-auto mt-4">
+        <div class="card shadow">
+            <div class="card-hearder bg-primary">
+                <h3 class="text-light">Add New User</h3>
+            </div>
+            <div class="card-body p-2">
+                <form action="/add" method="post" id="add-form" enctype="multipart/form-data">
+                    <div class="mb-2">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" class="form-control" placeholder="Enter name" required />
+                    </div>
+                    <div class="mb-2">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="form-control" placeholder="Enter email" required />
+                    </div>
+                    <div class="mb-2">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" class="form-control" placeholder="Enter phone" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="image" class="form-label">Select Image</label>
+                        <input class="form-control form-control" type="file" name="image" />
+                    </div>
+                    <div class="mb-3 d-grid">
+
+                      <input type="submit" name="submit" value="Add User" class="btn btn-primary btn-lg" placeholder="Enter name" required />
+                    </div>
+                </form>
+            </div>
+        </div>
+     </div>
+
+  </div>
+</div>
+<%- include('layout/footer') %> 
